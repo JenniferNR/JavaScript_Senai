@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitando Casas Décimais</title>
+
+    <script>
+        var x = 23.4567
+        y = x.toFixed(2)
+        alert("Sem limitar: " + x + "\nLimitado: " + y)
+
+        // Recebendo uma STRING e transformando em NUMBER para poder limitar as casas decimais.
+        var x = prompt("Digite um numero com varias casas decimais:")
+        x = Number(x)
+        y = x.toFixed(2)
+        alert("Sem limitar: " + x + "\nLimitado: " + y)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
