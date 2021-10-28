@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+
+    <script>
+        var a = 20
+        var b = a*2
+        var c = a/2
+        var d = a-2
+        var e = a+2
+        
+        alert("Resultado com a variável X sendo NUMBER: \n x = " + a + "\n x*2 = " + b + "\n x/2 = " + c + "\n x-2 = " + d + "\n x+2 = " + e)
+
+        // Se a variável for STRING, se não converter a variável, a soma não será feita, os valores serão concatenados
+        var a = "20"
+        var e = a+2
+        
+        alert("Resultado com a variável X sendo STRING: \n x = " + a + "\n x+2 = " + e)
+
+        //Para converter uma variavel STRING para número é só colocar NUMBER(x) ou PARSEINT(x)
+        var a = "20"
+        var e =  Number(a)+2
+
+        alert("Resultado com a variável X sendo STRING e sendo convertida para NUMBER: \n x = " + a + "\n x+2 = " + e)
+
+        // Pode converter uma váriavel STRING para INTEIRO utilizando PARSEINT(x), mas irá funcionar apenas com números inteiros por irá ignorar as casas decimais
+        var a = "20"
+        var e =  parseInt(a)+2
+
+        alert("Resultado com a variável X sendo STRING e sendo convertida para PARSEINT: \n x = " + a + "\n x+2 = " + e)
+
+         //Váriavel STRING com valor com ponto flutuante
+        var a = "20.5"
+        var e =  a+2
+
+        alert("Resultado com a variável X sendo STRING com ponto flutuante: \n x = " + a + "\n x+2 = " + e)
+
+        //Váriavel STRING com valor com ponto flutuante sendo convertida com PARSEINT(x), mas irá funcionar apenas com números inteiros por irá ignorar as casas decimais
+        var a = "20.5"
+        var e =  parseInt(a)+2
+
+        alert("Resultado com a variável X sendo STRING com ponto flutuante e sendo convertida para PARSEINT: \n x = " + a + "\n x+2 = " + e)
+
+        //Resultado STRING com casa décimal convertendo para NUMBER
+        var a = "20.5"
+        var e =  Number(a)+2
+
+        alert("Resultado com a variável X sendo STRING com ponto flutuante e sendo convertida para NUMBER: \n x = " + a + "\n x+2 = " + e)
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
