@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - 27/10/2021</title>
+
+    <script>
+        /* 3 - Criar um software em JS, que receba o valor total de um almoço, calcule e informe o valor dos 13% do garçom e o valor da conta a ser pago.
+            ->Entrada: Digite o valor total do almoço;
+            ->Processamento 1: Calcular os 13% do garçom;
+            ->Processamento 2: Total a pagar;
+            ->Saída 1: Mostrar o total do garçom;
+            ->Saída 2: Mostrar o total a pagar;
+            ->Nome do arquivo: ex_3.html */
+
+        var almoco = prompt("Digite o valor total do almoço:")
+        almoco = Number(almoco)
+        var taxa = almoco * 0.13
+        var total = taxa + almoco
+
+        // Limitando as casas decimais em 2
+        var limitAlmoco = almoco.toFixed(2)
+        var limitTaxa = taxa.toFixed(2)
+        var limitTotal = total.toFixed(2)
+        alert("O garçom recebe 13% do total do almoço, sendo assim, a taxa cobrada será de: \n R$" + limitTaxa)
+        alert("- CONTA - \nAlmoço: R$" + limitAlmoco + "\nTaxa: R$" + limitTaxa + "\nTotal: R$" + limitTotal)
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
